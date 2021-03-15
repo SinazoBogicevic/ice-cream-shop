@@ -4,6 +4,7 @@ export const Container = styled.nav`
   width: 100%;
   height: 80px;
   box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
+  background: var(--white);
 `;
 
 export const InnerContainer = styled.div`
@@ -31,7 +32,7 @@ export const NavItem = styled.li`
   &:after {
     content: "";
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: 0px;
     width: 0px;
     height: 2px;

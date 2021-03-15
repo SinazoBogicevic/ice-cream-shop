@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@900&display=swap');
+:root{
+  --beige: #f5f5dc;
+  --starbucks-green: #00704A;
+  --highlight:#0a9e6d;
+  --black: #27251F;
+  --pitch-color: #808080;
+  --disable: #5a5858;
+  --white: #ffff;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,4 +22,5 @@ body {
 
 header{
   min-height: 100vh;
+  background: var(--beige);
 }
