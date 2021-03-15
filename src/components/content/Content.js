@@ -15,8 +15,9 @@ import {
 } from "./content.elements";
 import { Button } from "../../global.elements";
 import hazelnut from "../../assets/ice cream cups/hazelnut.png";
+import Slide from "../Slide/Slide";
 
-const Content = () => {
+const Content = (props) => {
   return (
     <MainContainer>
       <InnerContainer>
@@ -46,6 +47,7 @@ const Content = () => {
         <ImgContainer>
           <Image src={hazelnut} alt="hazelnut icream in a cup" />
         </ImgContainer>
+        <Slide data={props.data} />
       </InnerContainer>
     </MainContainer>
   );
