@@ -1,0 +1,12 @@
+.swiper-container{
+    width: 100%;
+}
+
+.swiper-wrapper{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.swiper-slide .thumbs{
+
+}

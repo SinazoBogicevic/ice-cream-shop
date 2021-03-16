@@ -44,9 +44,6 @@ const Content = (props) => {
             <Button fill={false}>nutritional information</Button>
           </ButtonsContainer>
         </TextContainer>
-        <ImgContainer>
-          <Image src={hazelnut} alt="hazelnut icream in a cup" />
-        </ImgContainer>
         <Slide data={props.data} />
       </InnerContainer>
     </MainContainer>

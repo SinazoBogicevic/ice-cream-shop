@@ -8,7 +8,7 @@ export const MainContainer = styled.section`
 
 export const InnerContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 300px;
+  grid-template-columns: 1fr 2fr;
   justify-content: center;
   align-items: center;
 `;
@@ -62,11 +62,4 @@ export const SalesPitch = styled.p`
 
 export const ButtonsContainer = styled.div`
   display: flex;
-`;
-
-export const ImgContainer = styled.div``;
-
-export const Image = styled.img`
-height: 100%;
-width: 100%:
 `;
