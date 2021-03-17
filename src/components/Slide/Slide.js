@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { Container, Img } from "./slide.elements";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwipeCore, { Thumbs, Navigation, Controller } from "swiper/core";
+import SwipeCore, { Thumbs, Navigation } from "swiper";
 import "swiper/swiper-bundle.css";
 import "./slide.css";
 
-SwipeCore.use([Thumbs, Navigation, Controller]);
+SwipeCore.use([Thumbs, Navigation]);
 
 const Slide = (props) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  const [controlledSwiper, setControlledSwiper] = useState(null);
+
   const data = props.data;
   const slides = data.map(({ url, color, alt }, index) => (
     <SwiperSlide tag="li">
@@ -32,6 +32,7 @@ const Slide = (props) => {
         thumbs={{ swiper: thumbsSwiper }}
         watchSlidesProgress
         watchSlidesVisibility
+        //navigation
         spaceBetween={0}
         slidesPerView={1}
         wrapperTag="ul"
@@ -46,7 +47,6 @@ const Slide = (props) => {
         onSwiper={setThumbsSwiper}
         spaceBetween={1}
         slidesPerView={3}
-        //navigation
         direction="vertical"
         wrapperTag="ul"
         className="thumbs"

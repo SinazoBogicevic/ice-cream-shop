@@ -8,5 +8,5 @@ export const Container = styled.div`
 
 export const Img = styled.img`
   width: ${({ thumb }) => (thumb ? "200px" : "100%")};
-  cursor: pointer;
+  cursor: grab;
 `;
