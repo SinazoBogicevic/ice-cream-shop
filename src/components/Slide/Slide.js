@@ -9,6 +9,11 @@ SwipeCore.use([Thumbs, Navigation]);
 
 const Slide = (props) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const handleGrab = () => {
+    const grab = document.querySelector(".swiper-slide img");
+
+    grab.style.cursor = "grabbing";
+  };
 
   const data = props.data;
   const slides = data.map(({ url, color, alt }, index) => (
@@ -19,7 +24,7 @@ const Slide = (props) => {
 
   const thumbs = data.map(({ url, color, alt }, index) => (
     <SwiperSlide tag="li">
-      <Img src={url} alt={alt} thumb={true} />
+      <Img src={url} alt={alt} thumb={true} onClick={handleGrab} />
     </SwiperSlide>
   ));
 

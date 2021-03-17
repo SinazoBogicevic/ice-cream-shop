@@ -36,12 +36,12 @@ export const NavItem = styled.li`
     bottom: 0px;
     width: 0px;
     height: 2px;
-    background: green;
+    background: var(--starbucks-green);
     transition: width 0.4s linear;
   }
 
   &:hover {
-    color: green;
+    color: var(--starbucks-green);
     &:after {
       width: 100%;
     }

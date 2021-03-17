@@ -8,5 +8,14 @@ export const Container = styled.div`
 
 export const Img = styled.img`
   width: ${({ thumb }) => (thumb ? "200px" : "100%")};
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
   cursor: grab;
+
+  &:active {
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
 `;
